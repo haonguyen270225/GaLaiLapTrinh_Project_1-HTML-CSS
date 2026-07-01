@@ -1,3 +1,7 @@
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -26,10 +30,14 @@ a {
   font-weight: 600;
   font-size: 1.6rem;
   background: #171100;
-  border-radius: 24.5px;
+  border-radius: 999px;
   line-height: 50px;
   min-width: 118px;
   color: aliceblue;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 /* ================== header ======================= */
 .header {
@@ -39,6 +47,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -10px;
+  z-index: 1;
 }
 .header .body {
   /* Tác động vào các class body là con của header ! */
@@ -87,4 +96,163 @@ a {
 
 .header .action {
   margin-left: 49px;
+}
+
+/* ================= hero ========================== */
+.hero {
+  padding-top: 56px 0 65px;
+  color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+
+/* ============ hero left ========== */
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover; /* không vị vỡ ảnh ! */
+  border-radius: 20px;
+}
+
+.hero .hero-summary {
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+
+  width: 270px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9e8;
+}
+.hero-summary .icon2 {
+  background: #fcefff;
+}
+.hero-summary .icon3 {
+  background: #ebeaff;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero-summary .label {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.hero-summary .title {
+  font-weight: 60rem;
+  font-size: 1.8rem;
+  color: #171100;
+  line-height: 1.67;
+}
+
+/* ========= hero right ========= */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+.hero .heading {
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -2%;
+}
+
+.hero .desc {
+  margin-top: 22px;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero .hero-cta {
+  min-width: 108px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+  display: flex;
+  border: none; /*  bỏ viền boder của button ! */
+  background-color: transparent;
+  margin-left: 28px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  letter-spacing: 0%;
+  color: #171100;
+  margin-left: 14px;
+}
+
+.hero .desc-recent {
+  margin-top: 48px;
+}
+.hero .stats {
+  margin-top: 8px;
+}
+
+.hero .stats strong {
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  font-size: 4.4rem;
+  line-height: 1.23;
+  letter-spacing: 0%;
+  margin-right: 15px;
+}
+
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
 }
