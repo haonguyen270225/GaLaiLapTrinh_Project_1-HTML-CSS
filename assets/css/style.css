@@ -48,6 +48,21 @@ a {
   line-height: 1.27;
   letter-spacing: -2%;
 }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
 /* ================== header ======================= */
 .header {
   background: #a18537;
@@ -329,6 +344,7 @@ a {
   border-radius: 12px;
   background-color: #fff;
   border: 1px solid #e2dfda;
+  flex: 1;
 }
 
 .popular .course-item:hover {
