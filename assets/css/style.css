@@ -39,6 +39,14 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
+
+.heading-lv2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.27;
+  letter-spacing: -2%;
+}
 /* ================== header ======================= */
 .header {
   background: #a18537;
@@ -256,4 +264,49 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* =================== popular ======================== */
+.popular {
+  padding: 65px;
+  background-color: #086d2f;
+  margin-top: 135px;
+}
+
+.popular-top .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  letter-spacing: 0%;
+  color: #5f5b53;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.popular-top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
