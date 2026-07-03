@@ -584,15 +584,19 @@ a {
 .blogs .blog-list {
   gap: 30px;
   display: flex;
+  overflow: hidden;
 }
 
 .blogs .blog-item {
-  width: 33.33%;
-  width: 370px;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
   height: 467px;
   opacity: 1;
   border-radius: 16px;
   background-color: #fff;
+  /* Demo thay doi giao diện ! */
+  transition: all ease 0.5;
+  transform: translate(-100%);
 }
 
 .blogs .blog-item .thumb {
@@ -650,7 +654,27 @@ a {
 
 .blogs .blog-item .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 .blogs .blog-item .btn:hover {
   background-color: var(--primary-color);
+}
+
+.blogs .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #5f5b53;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
 }
