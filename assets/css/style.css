@@ -457,8 +457,9 @@ a {
 }
 
 .feedback-item .content {
-  width: 66%;
-  margin-left: auto;
+  width: 25%;
+  /* height: 188px; */
+  margin: 0px 0px 0px 130px;
 }
 
 .feedback-item blockquote {
@@ -466,8 +467,21 @@ a {
   line-height: 1.54;
   font-size: italic;
   color: #fff;
+  overflow-wrap: break-word;
 }
 
 .feedback-item .content img {
   margin-left: -20px;
+}
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  display: flex;
+  flex-shrink: 0;
+  transform: translate(-200%);
+  transition: all ease 0.5;
 }
